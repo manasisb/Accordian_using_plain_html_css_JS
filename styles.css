@@ -1,0 +1,214 @@
+@media only screen and (max-width:767px){
+    
+    body{
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    button.accordion{
+        width: 100%;
+        outline: none;
+        text-align: left;
+        padding: 15px 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        cursor: pointer;
+        background-color: white;
+        border-bottom-color: black;
+        border-left-color: white;
+        border-right-color: white;
+        border-top-color: white;
+    }
+    
+    .accordion-content{
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-in-out;
+        
+    }
+    
+    
+    .accordion:after {
+          content: '\02795'; 
+          font-size: 13px;
+          color: #777;
+          float: right;
+          margin-left: 5px;
+        }
+
+    .active1:after {
+          content: "\2796";
+        }
+    
+    .material_tab{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .box{
+        width: 100px;
+        height: 70px;
+        margin:25px;
+    }
+
+    .percentage{
+        font-size: 40px;
+    }
+
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .materialname{
+        color: #323232;
+    }
+
+    .materialwool{
+        color: #323232;
+        padding-left: 10px;
+
+    }
+
+    .text{
+        padding: 30px;
+        text-align: center;
+
+    }
+    
+    .hr{
+        height: 1px;
+        max-width: 6%; 
+        border-width:0;
+        color:black;
+        background-color:black;
+        position: relative;
+        right: 3vw;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 767px){
+    
+    body{
+    font-family: 'Open Sans', sans-serif;
+    }
+    
+    
+    .btn-group {
+        width: 549px;
+        height: 39px;
+        margin-left: auto;
+        margin-right: auto;
+       align-content: center;
+        border-collapse: collapse;
+        cursor: pointer;
+    }
+    
+     
+    button.accordion{
+      width: 183px;
+      height: 38px;
+      background-color: white;
+      border: 1px solid black;
+      white-space: nowrap;
+      margin-left: -5px;
+      border-radius: 0px;
+      margin-top: 50px;
+    }
+    
+    .btn-group button.active{
+        background-color: black;
+        color: white;
+    }
+    
+    .btn-group:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .accordion-content{
+        display: none;
+/*        position: absolute;*/
+    }
+    
+    .accordion-content.active{
+        display: block;
+    }
+    
+    #fit:checked ~ #content1,
+    #care:checked ~ #content2,
+    #materials:checked ~ #content3, {
+      display: block;
+    }
+    
+
+    #content1, #content2, #content3{
+        position: absolute;
+        left: 20vw;
+        width: 20vw;
+    }
+    
+    
+ .material_tab{
+    width: 60vw;
+/*    height: 22vh;*/
+    margin-top: 20px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+    
+  .hr{
+        height: 1px;
+        max-width: 3vw; 
+        border-width:0;
+        color:black;
+        background-color:black;
+        position: relative;
+        left: 19vw;
+        top: 2vh;
+    }
+    
+        
+ .box{
+    width: 100px;
+    height: 80px;
+    margin:10px;
+     padding-right: 20px;
+    }
+
+    .percentage{
+        font-size: 50px;
+    }
+
+    p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .materialname{
+        color: #323232;
+    }
+
+    .materialwool{
+        color: #323232;
+        padding-left: 30px;
+
+    }
+
+    .text{
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+}
